@@ -1,23 +1,23 @@
 # React + Vite
 
-## 安裝Node.js 16版以上 
+### 安裝Node.js 16版以上 
 ```
 node -v
 ```
 
-## Github網頁上操作
+### Github網頁上操作
 -- 建立repository 
 -- 輸入專案名稱跟簡介
 -- Add README 要開啟
 -- 建立完成後點選<> Code
 -- 複製HTTPS底下文字
 
-## 開啟VS Code
+### 開啟VS Code
 -- 左邊選單source control 
 -- Clone Resposity
 -- 選擇路徑
 
-## 建立vite專案，開啟Termainal
+### 建立vite專案，開啟Termainal
 ```
 npm create vite@latest
 ```
@@ -74,7 +74,7 @@ Ok to proceed? (y) y
   ➜  press h + enter to show help
 ```
 
-## 專案結構說明 
+### 專案結構說明 
 ```
 react/
 ├── node_modules/          # 開發套件
@@ -94,17 +94,17 @@ react/
 ├── vite.config.js         # Vite 設定檔
 ```
 
-## 運行開發專案
+### 運行開發專案
 ```
 npm run dev
 ```
 
-## 拿到他人專案時先安裝npm
+### 拿到他人專案時先安裝npm
 ```
 npm install  
 ```
 
-## 建立編譯專案(Live Server觀看dist內容)
+### 建立編譯專案(Live Server觀看dist內容)
 ```
 npm run build
 ```
