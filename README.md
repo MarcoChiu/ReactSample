@@ -6,16 +6,20 @@ node -v
 ```
 
 ### Github網頁上操作
--- 建立repository 
--- 輸入專案名稱跟簡介
--- Add README 要開啟
--- 建立完成後點選<> Code
--- 複製HTTPS底下文字
+```
+建立repository 
+輸入專案名稱跟簡介
+Add README 要開啟
+建立完成後點選<> Code
+複製HTTPS底下文字
+```
 
 ### 開啟VS Code
--- 左邊選單source control 
--- Clone Resposity
--- 選擇路徑
+```
+左邊選單source control 
+Clone Resposity
+選擇路徑
+```
 
 ### 建立vite專案，開啟Termainal
 ```
