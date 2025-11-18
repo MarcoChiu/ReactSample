@@ -93,7 +93,7 @@ react/
 ├── eslint.config.js       # 程式碼檢測設定檔
 ├── index.html             # 首頁
 ├── package-lock.json      # 專案套件清單，自動產生勿隨意修改
-├── package.json           # 專案套件清單，"scripts":{dev(開發環境方式),build(建置方式)}  "deploy":"gh-pages -d dist"
+├── package.json           # 專案套件清單 
 ├── README.md              # 專案說明文件
 ├── vite.config.js         # Vite 設定檔
 ```
@@ -113,12 +113,20 @@ npm install
 npm run build
 ```
 
- 
-
- 
-
-
-
+### 發佈到Github Page
+```
+package.json 底下加入
+"scripts": {
+    ...
+    "deploy": "vite build && gh-pages -d dist"
+ }
+```
+```
+npm install gh-pages --save-dev
+```
+```
+npm run deploy
+```
 
  
 
