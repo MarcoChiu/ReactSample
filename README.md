@@ -130,6 +130,11 @@ npm install gh-pages --save-dev
 npm run deploy
 ```
 
+### Github Page檔案路徑問題
+```
+vite.config.js
+base:process.env.NODE_ENV ==='production'?'/您的專案名稱/' :'/',
+```
  
 
 
