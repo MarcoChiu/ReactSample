@@ -1,6 +1,8 @@
 # React + Vite
 
-### 安裝Node.js 16版以上 
+## 所有指令在專案底下使用VS Code 上方的Terminal(終端機)
+
+### 安裝Node.js 16版以上
 ```
 node -v
 ```
@@ -21,7 +23,7 @@ Clone Resposity
 選擇路徑
 ```
 
-### 建立vite專案，開啟Termainal
+### 建立vite專案
 ```
 npm create vite@latest
 ```
