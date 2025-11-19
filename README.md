@@ -136,6 +136,24 @@ vite.config.js
 base:process.env.NODE_ENV ==='production'?'/您的專案名稱/' :'/',
 ```
  
+### 安裝axios
+```
+npm install axios
+使用的頁面
+import axios from 'axios'
+```
 
+### 安裝scss
+```
+npm add -D sass
+main.jsx
+import './assets/all.scss'
+ 
+```
 
-
+### 嚴格模式 可拿掉
+```
+  <StrictMode>
+    <App />
+  </StrictMode>
+```
