@@ -4,6 +4,7 @@
 
 ### 安裝Node.js 16版以上
 ```
+檢查版本
 node -v
 ```
 
@@ -118,14 +119,16 @@ npm run build
 
 ### 發佈到Github Page
 ```
-package.json 底下加入
+package.json 加入
 "scripts": {
     ...
     "deploy": "vite build && gh-pages -d dist"
  }
 ```
 ```
+--save-dev開發環境才有
 npm install gh-pages --save-dev
+
 ```
 ```
 npm run deploy
@@ -133,26 +136,34 @@ npm run deploy
 
 ### Github Page檔案路徑問題
 ```
-vite.config.js
+vite.config.js加入
 base:process.env.NODE_ENV ==='production'?'/您的專案名稱/' :'/',
 ```
  
 ### 安裝axios
 ```
 npm install axios
-使用的頁面
+使用頁面
 import axios from 'axios'
 ```
 
 ### 安裝scss
 ```
+-D開發環境才有
 npm add -D sass
-main.jsx
-import './assets/all.scss'
- 
+main.jsx加入
+import './assets/all.scss' 
 ```
 
-### 嚴格模式 可拿掉
+### 安裝且客製化bootstrap
+```
+npm i bootstrap
+安裝完成會有些error，需bootstrap修正，可略過問題
+all.scss加入
+@import 'bootstrap/scss/bootstrap'
+``` 
+
+### 嚴格模式
 ```
   <StrictMode>
     <App />

@@ -15,9 +15,9 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        //const response = await axios.get('https://livejs-api.hexschool.io/api/livejs/v1/customer/marcochiu/products');
+        const response = await axios.get('https://livejs-api.hexschool.io/api/livejs/v1/customer/marcochiu/products');
         //console.log(response.data.products);
-        //setProducts(response.data.products);
+        setProducts(response.data.products);
       } catch (error) {
         console.error(error);
       }
@@ -36,8 +36,35 @@ function App() {
 
   return (
     <>
+
       <div>
         <h2>產品列表</h2>
+
+
+        <div>
+          <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            bootstrap Modal demo
+          </button>
+          <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h1 className="modal-title fs-5" id="exampleModalLabel">標題</h1>
+                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div className="modal-body text-start">
+                  <div>1.修改class變className </div>
+                  <div>2.main.jsx import 'bootstrap' </div>
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                  <button type="button" className="btn btn-primary">存檔</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         { /*  
         左 && 右：左真 → 回右，左假 → 回左  
         左 || 右：左真 → 回左，左假 → 回右 
