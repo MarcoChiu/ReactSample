@@ -9,18 +9,19 @@ node -v
 
 ### Github網頁上操作
 ```
-建立repository 
-輸入專案名稱跟簡介
-Add README 要開啟
-建立完成後點選<> Code
-複製HTTPS底下文字
+1.建立repository 
+2.輸入專案名稱跟簡介
+3.Choose visibility 選public才可以部屬到Github Page
+4.Add README 要開啟
+5.建立完成後點選<> Code
+6.複製HTTPS底下文字
 ```
 
 ### 開啟VS Code
 ```
-左邊選單source control 
-Clone Resposity
-選擇路徑
+1.左邊選單source control 
+2.Clone Resposity
+3.選擇路徑
 ```
 
 ### 建立vite專案
