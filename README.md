@@ -1,6 +1,7 @@
 React + axios + bootstrap 基礎專案可直接使用
 
-## 指令執行方式 VS Code 上方的Terminal(終端機)
+## 安裝說明
+- 指令執行方式 VS Code 上方的Terminal(終端機)
 
 ### 安裝Node.js 16版以上
 ```bash
