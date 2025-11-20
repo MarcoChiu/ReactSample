@@ -10,7 +10,7 @@ import './App.css'
 
 const { VITE_APP_DAVID } = import.meta.env;
 
-function App() {
+const App = () => {
   const [products, setProducts] = useState([]);
   const modalRef = useRef(null);
   const customerModal = useRef(null);
