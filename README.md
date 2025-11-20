@@ -171,6 +171,19 @@ npm i bootstrap
 #正式環境
 .env.production
 ```
+### 使用https
+```bash
+#參考下列網址產生localhost-key.pem localhost.pem
+https://marco.easyusing.com/2025/11/vs-code-mkcert-vite-httpsssl.html
+#vite.config.js
+server: {
+    port: 3000,
+    https: {
+      key: fs.readFileSync('./localhost-key.pem'),
+      cert: fs.readFileSync('./localhost.pem')
+    }
+  }
+```
 
 ## 下載專案後如何執行 
 - 1.先解壓縮 
