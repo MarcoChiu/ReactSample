@@ -170,7 +170,7 @@ npm i bootstrap
 參考.env.三種版本
 ```
 
-  ### 嚴格模式
+### 嚴格模式
 ```
   <StrictMode>
     <App />
