@@ -121,7 +121,7 @@ npm run preview
 
 ### Publish Github Page
 ```bash 
-package.json
+#package.json
 "scripts": {
     ...
     "deploy": "vite build && gh-pages -d dist"
