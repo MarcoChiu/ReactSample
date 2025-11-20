@@ -198,7 +198,7 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/MarcoChiu/20251226_2.git
+git remote add origin https://github.com/yourname/xxx.git
 git push -u origin main
 ```
 - 5.更新指令
@@ -206,4 +206,14 @@ git push -u origin main
 git add .
 git commit -m "更新內容說明"
 git push
+```
+
+- 6.錯誤處理
+```bash
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/yourname/xxx.git'
+```
+```bash
+git branch -M main
+git push -u origin main --force
 ```
