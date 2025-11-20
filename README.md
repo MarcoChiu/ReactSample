@@ -107,12 +107,6 @@ react/
 ├── vite.config.js         # Vite 設定檔
 ```
 
-### 安裝npm
-```bash
-#剛拿到他人的程式碼時需安裝
-npm install  
-```
-
 ### 運行開發專案
 ```bash
 #會對應package.json scripts dev
@@ -190,4 +184,30 @@ npm i bootstrap
   <StrictMode>
     <App />
   </StrictMode>
+```
+## 下載專案後如何執行
+ 
+- 1.先解壓縮
+ 
+- 2.輸入指令
+```bash
+npm install  
+```
+
+- 3.Github建立repository 
+ 
+- 4.輸入指令連結個人或指定的Github
+```bash
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/MarcoChiu/20251226_2.git
+git push -u origin main
+```
+- 5.更新指令
+```bash
+git add .
+git commit -m "更新內容說明"
+git push
 ```
