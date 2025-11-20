@@ -120,7 +120,7 @@ npm run build
 npm run preview
 ```
 
-### Publish Github Page
+### 發佈至Github Page
 ```bash 
 #package.json
 "scripts": {
