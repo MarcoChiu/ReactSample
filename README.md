@@ -153,7 +153,8 @@ import axios from 'axios'
 ```bash
 #-D 開發環境才安裝
 npm add -D sass
-main.jsx import './assets/all.scss' 
+#main.jsx 
+import './assets/all.scss' 
 ```
 
 ### bootstrap
@@ -169,7 +170,7 @@ npm i bootstrap
 .env..env.development
 #本地端開發環境
 .env.development.local
-#正式環境
+#正式環境或以編譯
 .env.production
 ```
 ### 使用https
