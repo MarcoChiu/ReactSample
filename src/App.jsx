@@ -8,41 +8,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+const { VITE_APP_DAVID } = import.meta.env;
+
 function App() {
   const [products, setProducts] = useState([]);
   const modalRef = useRef(null);
   const customerModal = useRef(null);
 
-  // useEffect
-  // │
-  // ├─ 什麼時候會跑？
-  // │     └─ 畫面 render「之後」才執行
-  // │
-  // ├─ 我可以控制它什麼時候跑？
-  // │
-  // │   useEffect(() => { ... })
-  // │   │── 沒給 [] → 每次 render 都跑
-  // │
-  // │   useEffect(() => { ... }, [])
-  // │   │── 空陣列 [] → 只在第一次跑一次（初始化）
-  // │
-  // │   useEffect(() => { ... }, [A, B, C])
-  // │       └── 只要 A 或 B 或 C 改變，就會跑
-  // │
-  // ├─ 用來做什麼？
-  // │     ├─ 打 API（最常用）
-  // │     ├─ 綁定事件（scroll、resize）
-  // │     ├─ 設定 setInterval / setTimeout
-  // │     ├─ 操作 DOM（focus input）
-  // │     └─ 資料或狀態變動後做額外事情
-  // │
-  // └─ 清除副作用（return）
-  //       useEffect(() => {
-  //         監聽事件...
-  //         return () => { 卸載事件 }
-  //       }, [])
-  // 「[] 裡放什麼，useEffect 就監聽什麼」
-  // 「沒放東西，就不監聽任何人 → 只跑一次」
 
   //axios要放在useEffect裡 axios是非同步的    
   //方法1
@@ -52,6 +24,8 @@ function App() {
         const response = await axios.get('https://livejs-api.hexschool.io/api/livejs/v1/customer/marcochiu/products');
         //console.log(response.data.products);
         setProducts(response.data.products);
+
+        //console.log(VITE_APP_DAVID);
       } catch (error) {
         console.error(error);
       }
@@ -69,8 +43,7 @@ function App() {
   // }, []); 
 
   useEffect(() => {
-    //初始化modal
-    customerModal.current = new Modal(modalRef.current);
+    customerModal.current = new Modal(modalRef.current);//初始化modal
   }, []);
 
   const modalOpen = () => {
@@ -84,12 +57,15 @@ function App() {
   return (
     <>
       <div>
+
+        <h2>.env {VITE_APP_DAVID} </h2>
+
         <h2>React 呼叫Bootstrap Modal</h2>
         <div>
           <button type="button" className="btn btn-primary" onClick={modalOpen} >
             bootstrap Modal demo
           </button>
-          <div className="modal fade" ref={modalRef} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal fade" ref={modalRef} aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog">
               <div className="modal-content">
                 <div className="modal-header">
