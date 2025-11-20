@@ -189,12 +189,14 @@ server: {
 
 ## 下載專案後如何執行 
 - 1.先解壓縮 
-- 2.輸入指令
+- 2.開啟VS Code 
+- 3.開啟解壓後的資料夾
+- 4.輸入指令
 ```bash
 npm install  
 ```
-- 3.Github建立repository 
-- 4.輸入指令連結個人或指定的Github
+- 5.Github建立repository 
+- 6.輸入指令連結個人或指定的Github
 ```bash
 git init
 git add README.md
@@ -203,14 +205,14 @@ git branch -M main
 git remote add origin https://github.com/yourname/xxx.git
 git push -u origin main
 ```
-- 5.更新指令
+- 7.更新指令
 ```bash
 git add .
 git commit -m "更新內容說明"
 git push
 ```
 
-- 6.錯誤處理
+- 8.錯誤處理
 ```bash
 error: src refspec main does not match any
 error: failed to push some refs to 'https://github.com/yourname/xxx.git'
