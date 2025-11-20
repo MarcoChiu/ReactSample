@@ -8,12 +8,13 @@ https://marcochiu.github.io/20251226_1/
 ## 指令執行方式 VS Code 上方的Terminal(終端機)
 
 ### 安裝Node.js 16版以上
-```
+```bash
+#觀看版本
 node -v
 ```
 
 ### Github網頁上操作
-```
+```bash
 1.建立repository 
 2.輸入專案名稱跟簡介
 3.Choose visibility 選public才可以部屬到Github Page
@@ -23,18 +24,18 @@ node -v
 ```
 
 ### 開啟VS Code
-```
+```bash
 1.左邊選單source control 
 2.Clone Resposity
 3.選擇專案路徑
 ```
 
 ### 建立vite專案
-```
+```bash
 npm create vite@latest
 ```
 
-```
+```bash
 Need to install the following packages:(安裝套件，第一次會問安裝過就不會出現)
 create-vite@8.1.0
 Ok to proceed? (y) y
@@ -87,7 +88,7 @@ Ok to proceed? (y) y
 ```
 
 ### 專案結構說明 
-```
+```bash
 react/
 ├── node_modules/          # 開發套件
 ├── public/                # 靜態資源目錄，不編譯
@@ -106,72 +107,86 @@ react/
 ├── vite.config.js         # Vite 設定檔
 ```
 
-### 運行開發專案
-```
-npm run dev
-```
-
-### 拿到他人專案時先安裝npm
-```
+### 安裝npm
+```bash
+#剛拿到他人的程式碼時需安裝
 npm install  
 ```
 
-### 建立編譯dist
+### 運行開發專案
+```bash
+#會對應package.json scripts dev
+npm run dev
 ```
+
+### 建立編譯
+```bash
+#建立專案在dist
+#package.json scripts build
 npm run build
 ```
 
 ### 執行dist網頁資料
-```
+```bash
+#會跑本地端dist資料夾
+#package.json scripts preview
 npm run preview
 ```
 
 ### Publish Github Page
-```
+```bash 
 package.json
 "scripts": {
     ...
     "deploy": "vite build && gh-pages -d dist"
  }
 ```
-```
+```bash
+#--save-dev 開發環境才安裝
 npm install gh-pages --save-dev
-
 ```
+```bash
+#非底層專案時要加入
+#vite.config.js
+base:process.env.NODE_ENV ==='production'?'/您的專案名稱/' :'/',
 ```
+```bash
 npm run deploy
 ```
 
-### Github Page Error
-```
-vite.config.js
-base:process.env.NODE_ENV ==='production'?'/您的專案名稱/' :'/',
-```
- 
 ### axios
-```
+```bash
 npm install axios
-page import axios from 'axios'
+#在使用頁面
+import axios from 'axios'
 ```
 
 ### scss
-```
+```bash
+#-D 開發環境才安裝
 npm add -D sass
 main.jsx import './assets/all.scss' 
 ```
 
 ### bootstrap
-```
+```bash
+#詳情至all.scss
 npm i bootstrap
+
 ``` 
 
 ### 環境變數
-```
-參考.env.三種版本
+```bash
+#開發環境
+.env..env.development
+#本地端開發環境
+.env.development.local
+#正式環境
+.env.production
 ```
 
 ### 嚴格模式
-```
+```bash
   <StrictMode>
     <App />
   </StrictMode>
