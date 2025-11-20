@@ -14,21 +14,18 @@ node -v
 ```
 
 ### Github網頁上操作
-```bash
-1.建立repository 
-2.輸入專案名稱跟簡介
-3.Choose visibility 選public才可以部屬到Github Page
-4.Add README 要開啟
-5.建立完成後點選<> Code
-6.複製HTTPS底下文字
-```
+- 1.建立repository 
+- 2.輸入專案名稱跟簡介
+- 3.Choose visibility 選public才可以部屬到Github Page
+- 4.Add README 要開啟
+- 5.建立完成後點選<> Code
+- 6.複製HTTPS底下文字
 
-### 開啟VS Code
-```bash
-1.左邊選單source control 
-2.Clone Resposity
-3.選擇專案路徑
-```
+
+### 開啟VS Code 
+- 1.左邊選單source control 
+- 2.Clone Resposity
+- 3.選擇專案路徑 
 
 ### 建立vite專案
 ```bash
@@ -116,14 +113,14 @@ npm run dev
 ### 建立編譯
 ```bash
 #建立專案在dist
-#package.json scripts build
+#會對應package.json scripts build
 npm run build
 ```
 
 ### 執行dist網頁資料
 ```bash
 #會跑本地端dist資料夾
-#package.json scripts preview
+#會對應package.json scripts preview
 npm run preview
 ```
 
@@ -140,11 +137,12 @@ package.json
 npm install gh-pages --save-dev
 ```
 ```bash
-#非底層專案時要加入
+#非底層專案時要加入，正是專案也用的到
 #vite.config.js
 base:process.env.NODE_ENV ==='production'?'/您的專案名稱/' :'/',
 ```
 ```bash
+#會對應package.json scripts deploy
 npm run deploy
 ```
 
@@ -179,23 +177,13 @@ npm i bootstrap
 .env.production
 ```
 
-### 嚴格模式
-```bash
-  <StrictMode>
-    <App />
-  </StrictMode>
-```
-## 下載專案後如何執行
- 
-- 1.先解壓縮
- 
+## 下載專案後如何執行 
+- 1.先解壓縮 
 - 2.輸入指令
 ```bash
 npm install  
 ```
-
 - 3.Github建立repository 
- 
 - 4.輸入指令連結個人或指定的Github
 ```bash
 git init
