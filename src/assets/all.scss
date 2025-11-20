@@ -1,11 +1,11 @@
 // https://getbootstrap.com/docs/5.3/customize/sass/
-// 切版班方式一樣
+// 切版班方式一樣客製化bootstrap
 
 //1.官網教學(固定)
  @import 'bootstrap/scss/functions';
  
 //2-2.在自訂義一個
-//!default所以這邊有設定就會依照設定
+//!default所以這邊有設定，下面scss變數會忽略
 @import './scss/customize';
 
 //2-1.將以下scss放到 /assets/scss/裡然後修改變數
