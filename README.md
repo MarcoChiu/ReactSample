@@ -173,6 +173,9 @@ npm i bootstrap
 ```bash
 #參考下列網址產生localhost-key.pem localhost.pem
 https://marco.easyusing.com/2025/11/vs-code-mkcert-vite-httpsssl.html
+mkcert localhost
+```
+```bash
 #vite.config.js
 server: {
     port: 3000,
