@@ -7,15 +7,15 @@ import { Modal } from 'bootstrap'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+const { VITE_APP_Path } = import.meta.env;
 
- 
 const App = () => {
-   
+
 
   return (
     <>
       <div>
-        <h2>ReactSample</h2>       
+        <h2>ReactSample:{VITE_APP_Path} </h2>
       </div>
     </>
   )
