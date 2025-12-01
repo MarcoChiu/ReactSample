@@ -131,12 +131,7 @@ npm run preview
 ```bash
 #--save-dev 開發環境才安裝
 npm install gh-pages --save-dev
-```
-```bash
-#非底層專案時要加入，正是專案也用的到
-#vite.config.js
-base:process.env.NODE_ENV ==='production'?'/您的專案名稱/' :'/',
-```
+``` 
 ```bash
 #會對應package.json scripts deploy
 npm run deploy
@@ -172,6 +167,7 @@ npm i bootstrap
 .env.development.local
 #正式環境或以編譯
 .env.production
+#修改vite.config.js 讓專案路徑也讀取變數
 ```
 ### 使用https
 ```bash
