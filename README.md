@@ -195,7 +195,8 @@ server: {
 npm install  
 ```
 - 5.Github建立repository 
-- 6.輸入指令連結個人或指定的Github
+- 6.參考上方加入https
+- 7.輸入指令連結個人或指定的Github
 ```bash
 git init
 git add README.md
@@ -204,14 +205,14 @@ git branch -M main
 git remote add origin https://github.com/yourname/xxx.git
 git push -u origin main
 ```
-- 7.更新指令
+- 8.更新指令
 ```bash
-git add .
-git commit -m "更新內容說明"
-git push
+git remote add origin https://github.com/yourname/xxx.git
+git branch -M main
+git push -u origin main
 ```
 
-- 8.錯誤處理
+- 9.錯誤處理
 ```bash
 error: src refspec main does not match any
 error: failed to push some refs to 'https://github.com/yourname/xxx.git'
